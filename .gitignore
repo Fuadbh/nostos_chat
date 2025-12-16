@@ -1,0 +1,18 @@
+# Python virtual environments
+.venv/
+venv/
+
+# Python cache and distribution
+__pycache__/
+*.pyc
+
+# Node/Frontend dependencies (if you switch to a modern framework like React/Vite)
+node_modules/
+dist/
+
+# Environment variables and local settings
+.env
+
+# Specific to macOS/Windows
+.DS_Store
+Thumbs.db

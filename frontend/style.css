@@ -1,0 +1,171 @@
+/* Basic Reset */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 700px;
+    height: 90vh;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#model-selector {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.messages-area {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Message Styles */
+.user-message, .bot-message {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    border-radius: 18px;
+    line-height: 1.4;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    margin-left: auto; /* Push to the right */
+}
+
+.bot-message {
+    background-color: #e2e6ea;
+    color: #333;
+    align-self: flex-start;
+    margin-right: auto; /* Push to the left */
+}
+
+/* Input Form */
+.input-form {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.input-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.input-form button:hover {
+    background-color: #218838;
+}
+
+/* Toggle Switch Styles (from W3Schools style for simplicity) */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.toggle-label {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    white-space: nowrap;
+    font-size: 0.9em;
+}

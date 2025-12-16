@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostos Chat - Local LLM UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>Nostos Chat</h1>
+            <div class="controls">
+                <select id="model-selector">
+                    <option value="model-a">Model A</option>
+                    <option value="model-b">Model B</option>
+                </select>
+
+                <label class="toggle-switch">
+                    <input type="checkbox" id="search-toggle">
+                    <span class="slider round"></span>
+                    <span class="toggle-label">Web Search</span>
+                </label>
+            </div>
+        </header>
+
+        <div id="messages" class="messages-area">
+            <div class="bot-message">Hello! I am your local chat assistant.</div>
+        </div>
+
+        <form id="chat-form" class="input-form">
+            <input type="text" id="user-input" placeholder="Type your message..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
