@@ -71,6 +71,7 @@ The server will be accessible at http://127.0.0.1:8000.
 
 The project is structured into two main, easily manageable components:
 
+```
 nostos_chat/
 ├── backend/
 │   ├── app.py
@@ -82,6 +83,7 @@ nostos_chat/
 ├── .gitignore
 ├── README.md
 └── LICENSE
+```
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
