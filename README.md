@@ -29,37 +29,41 @@ You need the following software installed:
 #### A. Navigate and Activate Virtual Environment
 
 1.  Navigate to the backend folder:
+    ```bash
     cd backend
-
-2.  Create and activate a Python virtual environment (.venv) to isolate dependencies:
     # Create the environment
-    python -m venv .venv 
-    
+    python -m venv .venv
     # Activate (Linux/macOS)
     source .venv/bin/activate
-    
     # Activate (Windows PowerShell)
     # .venv\Scripts\Activate.ps1
+    ```
 
 #### B. Install Dependencies
 
 Install the required Python packages:
-
-    pip install -r requirements.txt
+```
+pip install -r requirements.txt
+```
 
 #### C. Run the Backend Server
 
 Start the API server.
-    uvicorn app:app --reload --port 8000
-    
+```
+uvicorn app:app --reload --port 8000
+```
+
 The server will be accessible at http://127.0.0.1:8000.
 
-### Step 3: Run the Frontend (UI)
+### Step 2: Run the Frontend (UI)
 
-1.  Navigate to the `frontend` folder.
+1.  Navigate to the `frontend` folder:
+
+    ```bash
     cd ../frontend
+    ```
 
-2.  Simply open the `index.html` file in your web browser (e.g., double-click it in your file explorer).
+2.  Open the `index.html` file in your web browser (e.g., double-click it in your file explorer).
 
 ---
 
