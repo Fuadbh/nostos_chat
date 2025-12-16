@@ -86,10 +86,15 @@ pip install -r requirements.txt
 
 #### C. Run the Backend Server
 
-(Optional, for Google-powered web search): Set your Google API key and CSE ID:
+(Optional, for Google-powered web search): Set up Persistent Secrets
 ```bash
-export GOOGLE_SEARCH_API_KEY="your-google-api-key"
-export GOOGLE_SEARCH_CX="your-google-cse-id"
+Create a file named `.env` in the `/backend` directory.
+Add your keys inside the file (no quotes, no `export`):
+
+GOOGLE_SEARCH_API_KEY=your-google-api-key
+GOOGLE_SEARCH_CX=your-google-cse-id
+
+Ensure that `.env` is added to your project's `.gitignore` file for security!
 ```
 
 Start the API server:
