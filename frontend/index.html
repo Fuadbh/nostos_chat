@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nostos Chat - Local LLM UI</title>
+    <title>NOSTOS CHAT // CYBERPUNK INTERFACE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="chat-container">
         <header>
-            <h1>Nostos Chat</h1>
+            <h1>NOSTOS_CHAT</h1>
             <div class="controls">
                 <select id="model-selector">
-                    <option value="model-a">Model A</option>
-                    <option value="model-b">Model B</option>
+                    <!-- Options will be populated dynamically from the backend -->
                 </select>
 
                 <label class="toggle-switch">
                     <input type="checkbox" id="search-toggle">
                     <span class="slider round"></span>
-                    <span class="toggle-label">Web Search</span>
+                    <span class="toggle-label">NET_SEARCH</span>
                 </label>
+                <button id="clear-chat" class="clear-button" title="Clear conversation history">RESET</button>
             </div>
         </header>
 
         <div id="messages" class="messages-area">
-            <div class="bot-message">Hello! I am your local chat assistant.</div>
+            <div class="bot-message">> SYSTEM ONLINE<br>> INITIALIZING NEURAL INTERFACE<br>> READY FOR QUERY</div>
         </div>
 
         <form id="chat-form" class="input-form">
-            <input type="text" id="user-input" placeholder="Type your message..." required>
+            <input type="text" id="user-input" placeholder="> ENTER QUERY..." required>
             <button type="submit">Send</button>
         </form>
     </div>
